@@ -5,3 +5,15 @@ resource "aws_instance" "vm1" {
       Name ="test1"
    }
 }
+
+terraform {
+  cloud {
+    organization = "priar"
+    ## Required for Terraform Enterprise; Defaults to app.terraform.io for Terraform Cloud
+    hostname = "app.terraform.io"
+
+    workspaces {
+      tags = ["terraformclouddemo"]
+    }
+  }
+}
