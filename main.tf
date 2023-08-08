@@ -1,7 +1,7 @@
 data "terraform_remote_state" "vadapav" {
   backend = "remote"
   config = {
-    organization = "hashicorp"
+    organization = "wipro11"
     workspaces = {
       name = "terraformwipro"
     }
