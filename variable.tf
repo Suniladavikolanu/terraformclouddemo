@@ -1,16 +1,21 @@
-variable "aws_region" {
-  description = "Region of AWS"
-  type        = string
+variable "amiid" {
+    type = string
+    default = "ami-0ded8326293d3201b"
+}
+variable "instancetype" {
+  type = string
+  default = "t2.medium"
 }
 
-variable "instance_type" {
-  description = "EC2 Instance Type "
-  type        = string
+variable "accesskey" {
+  type = string
+
 }
-variable "access_key" {
+
+variable "secretkey" {
   type = string
 }
-variable "secret_key" {
-  type = string
-}
+ variable "region" {
+   type = string
+ }
 
