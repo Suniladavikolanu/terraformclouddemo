@@ -1,21 +1,14 @@
 data "terraform_remote_state" "vadapav" {
   backend = "remote"
   config = {
-    organization = "wipro11"
+    organization = "morningstardemo2"
     workspaces = {
-      name = "terraformwipro"
+      name = "morningstar"
     }
   }
 }
 
-resource "aws_instance" "statecheck" {
 
-    ami = var.amiid
-    instance_type = var.instancetype
-    tags = {
-        Name = "statecheck"
-    }
-}
 
 terraform {
   cloud {
@@ -27,4 +20,12 @@ terraform {
       tags = ["morningstar"]
     }
   }
+}
+
+resource "aws_s3_bucket" "b341246" {
+  bucket = "morningstar-cloudbucket31431"
+}
+
+resource "aws_s3_bucket" "b12324" {
+  bucket = "morningstar-cloudbucket5121"
 }
