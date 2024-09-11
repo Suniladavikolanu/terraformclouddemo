@@ -1,21 +1,10 @@
-variable "amiid" {
-    type = string
-    default = "ami-0ded8326293d3201b"
-}
-variable "instancetype" {
-  type = string
-  default = "t2.medium"
-}
-
-variable "accesskey" {
-  type = string
-
-}
-
-variable "secretkey" {
+variable "akey" {
   type = string
 }
- variable "region" {
-   type = string
- }
-
+variable "skey" {
+  type = string
+}
+variable "location" {
+  type = string
+  default = "ap-south-1"
+}
