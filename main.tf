@@ -13,10 +13,10 @@ terraform {
   }
 }
 
-resource "aws_s3_bucket" "b341246" {
+resource "aws_s3_bucket" "morningstar=b1" {
   bucket = "morningstar-cloudbucket31431"
 }
 
-resource "aws_s3_bucket" "b12324" {
+resource "aws_s3_bucket" "morningstar-b2" {
   bucket = "morningstar-cloudbucket5121"
 }
