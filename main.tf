@@ -20,3 +20,6 @@ resource "aws_s3_bucket" "morningstar_b1" {
 resource "aws_s3_bucket" "morningstar_b2" {
   bucket = "morningstar-cloudbucket5121"
 }
+resource "aws_s3_bucket" "morningstar_b3" {
+  bucket = "morningstar-cloudbucketb3"
+}
