@@ -1,12 +1,3 @@
-data "terraform_remote_state" "vadapav" {
-  backend = "remote"
-  config = {
-    organization = "morningstardemo2"
-    workspaces = {
-      name = "morningstar"
-    }
-  }
-}
 
 
 
